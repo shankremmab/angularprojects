@@ -1,0 +1,22 @@
+<p>userdetails works!</p>
+<table border="2px solid">
+    <tr>
+    <th>ID</th>
+    <th>username</th>
+    <th>name</th>
+     <th>email</th>
+     <th>address</th>
+     <th>phoneno</th>
+</tr>
+
+<tr *ngFor="let v of result">
+    <td>{{v.id}}</td>
+    <td>{{v.username}}</td>
+    <td>{{v.name}}</td>
+     <td>{{v.email}}</td>
+     <td>{{v.address.street}}</td>
+     <td>{{v.phone}}</td>
+
+</tr>
+</table>
+

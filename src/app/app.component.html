@@ -1,0 +1,96 @@
+<!-- 
+<h1>property binding</h1>
+<input type="text" [value]="val">
+<img [src]="img">
+<button [disabled]="isUnchanged">property</button>
+<p><span> [innerHTML]="propertyitm" is the <i>interpoltion</i>title</span></p>
+
+<h1>interpoltion</h1>
+<input type="text" value={{val}}>
+<img src={{img}}>
+<button disabled={{isUnchanged}}>interpoltion</button>
+<p><span>{{"interpoltion"}} is the <i>interpoltion</i>title</span></p> -->
+
+<!-- <h1 [class.sale]="onsale">Attribute binding</h1> -->
+<!-- <table border="1px solid">
+    <tr>
+    <th [attr.colSpan]="val1">heading</th>
+
+</tr>
+<tr>
+    <th>abc</th>
+    <th>xyzg</th>
+</tr>
+<tr>
+    <th>abc</th>
+    <th>xyz</th>
+</tr>
+</table>
+<tr><td>three</td></tr>
+
+<h1></h1> 
+ <button (click)="toggle()">click</button> 
+<app-user *ngIf="flag"></app-user>
+<table border="2px solid">
+    <tr>
+        <th>NAME |uppercase</th>
+        <th>CITY</th>
+        <th>ID</th>
+        <th>Salary</th>
+        <th>DOB</th>
+        <th>AGE</th>
+
+
+    </tr>
+    <tr *ngFor="let u of users">
+        <td>{{u.Name|uppercase}}</td>
+        <td>{{u.city}}</td>
+        <td>{{u.id}}</td>
+        <td>{{u.sal|currency}}</td>
+        <td>{{u.dob|date:"dd/MM/yyyy"}}</td>
+        <td>{{u.dob|age}}</td>
+
+    </tr>
+</table> -->  
+    <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+    <div>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#" routerLink="login">login <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" routerLink="registration">Registration</a>
+            <a class="nav-link" href="#"routerLink="dassboard">Dassboard</a>
+          </div> 
+        <!-- </div>
+      </nav>  -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#" routerLink="home">home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" routerLink="about">about</a>
+            <a class="nav-link" href="#" routerLink="contactus">contactus</a>
+            <a class="nav-link" href="#" routerLink="product">product</a>
+          </div>
+        </div>
+      </nav> -->
+      <router-outlet></router-outlet> 
+  <!-- </body>  -->
+  <!-- <app-userdetails></app-userdetails>  -->
+   <!-- <app-product-details></app-product-details>  -->
+   <!-- <app-assign1></app-assign1> -->

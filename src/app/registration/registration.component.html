@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="">
+<p>registration works!</p>
+<div class="container ">
+<form class="regName" #regForm="ngForm" (ngSubmit)="onsignup(regForm)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input #regemail="ngModel" type="email" class="form-control" name="regemail" required ngModel>
+      <span *ngIf="regemail.invalid && regemail.touched">enter valid emial id</span>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input  #regpas="ngModel" type="password" class="form-control" name="regpas" required ngModel>
+      <span *ngIf="regpas.invalid && regpas.touched">enter valid emial id</span>
+    </div>
+   <button type="submit" style="background-color:green">Signup</button> 
+  </form>
+</div>

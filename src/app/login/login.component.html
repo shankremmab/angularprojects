@@ -1,0 +1,19 @@
+
+<link rel="stylesheet" href="login.component.css">
+<p>login works!</p>
+<div class="container">
+<form class="loginName" #loginForm="ngForm" (ngSubmit)="onlogin1(loginForm)">
+     <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input #loginemail="ngModel" type="email" class="form-control" name="loginemail" required ngModel>
+      <span *ngIf="loginemail.invalid && loginemail.touched">enter valid emial id</span>
+     </div>
+     <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input  #loginpas="ngModel" type="password" class="form-control" name="loginpas" required ngModel>
+      <span *ngIf="loginpas.invalid && loginpas.touched">enter valid password id</span>
+      </div>
+   <button type="submit" style="background-color: green;">login</button> 
+  </form>
+
+
